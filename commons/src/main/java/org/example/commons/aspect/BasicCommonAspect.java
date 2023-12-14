@@ -11,10 +11,6 @@ import javax.annotation.PostConstruct;
 @EnableAspectJAutoProxy
 public class BasicCommonAspect {
 
-    protected void testInvocation() {
-        System.out.println("BasicCommonAspect invoked");
-    }
-
     @Before("@annotation(bca) && execution(* *(..))")
     public void executeBeforeForCommonAnnotation(JoinPoint joinPoint, BasicCommonAnnotation bca) {
         System.out.println("BasicCommonAnnotation detected");
