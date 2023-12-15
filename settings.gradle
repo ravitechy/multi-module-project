@@ -8,7 +8,7 @@ dependencyResolutionManagement {
             version('spring-boot-ver', '2.7.18')
             library('lombok', 'org.projectlombok:lombok:1.18.30')
             library('spring-boot-starter', 'org.springframework.boot', 'spring-boot-starter').versionRef('spring-boot-ver')
-            library('aspectjrt','org.aspectj:aspectjrt:1.9.8')
+            library('aspectjrt','org.aspectj:aspectjrt:1.9.21')
         }
     }
 }
