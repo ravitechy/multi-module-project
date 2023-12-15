@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
 //    api project(":commons")
-    inpath project(":commons")
+    aspect project(":commons")
     api libs.spring.boot.starter
     annotationProcessor libs.lombok
     implementation libs.aspectjrt
