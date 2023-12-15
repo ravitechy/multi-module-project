@@ -1,5 +1,5 @@
 rootProject.ext {
     projectGroup = 'org.example'
     projectVersion = '1.0.0-SNAPSHOT'
-    aspectjVersion = '8.4'
+    freefairVersion = '8.4'
 }
