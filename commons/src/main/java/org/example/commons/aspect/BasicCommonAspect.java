@@ -8,7 +8,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import javax.annotation.PostConstruct;
 
 @Aspect
-@EnableAspectJAutoProxy
 public class BasicCommonAspect {
 
     @Before("@annotation(bca) && execution(* *(..))")

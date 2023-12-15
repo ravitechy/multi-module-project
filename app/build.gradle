@@ -1,19 +1,20 @@
 plugins {
     id 'java'
     id 'java-library'
-    id 'io.freefair.aspectj.post-compile-weaving' version "${aspectjVersion}"
+    id 'io.freefair.aspectj.post-compile-weaving' version "${freefairVersion}"
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
 //    api project(":commons")
-    inpath project(":commons")
+    aspect project(":commons")
     api libs.spring.boot.starter
     annotationProcessor libs.lombok
     implementation libs.aspectjrt
